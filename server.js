@@ -12,12 +12,13 @@ app.use(express.json());
 app.use(cors());
 
 //// import routes ////
-
+const userRoutes = require('./routes/user.js');
 
 
 
 
 //// use routes ////
+app.use('/api/users', userRoutes);
 
 
 
